@@ -6,8 +6,11 @@ class HabitsList extends Component {
     return (
       <div className="HabitsList">
         <div className="row">
+          <div className="col-lg-12 p-40">
+              <h1 className="page-header">Health & Wellness</h1>
+          </div>
 
-            <HabitsThumbnail />
+          <HabitsThumbnail />
 
         </div>
       </div>
