@@ -34,13 +34,13 @@ class HabitsThumbnail extends Component {
             </a>
         </div>
         <div className="col-lg-3 col-md-4 col-xs-6 thumb">
-            <a className="thumbnail" onClick={this.handleClick.bind(this, 3)}>
+            <a className="thumbnail" onClick={this.handleClick.bind(this, 4)}>
                 <img className="img-responsive" src="images/sleep.jpg" alt="Sleep"/>
                 <h4 className="text-center text">Sleep</h4>
             </a>
         </div>
         <div className="col-lg-3 col-md-4 col-xs-6 thumb">
-            <a className="thumbnail" onClick={this.handleClick.bind(this, 4)}>
+            <a className="thumbnail" onClick={this.handleClick.bind(this, 3)}>
                 <img className="img-responsive" src="images/resilience.jpg" alt="Resilience"/>
                 <h4 className="text-center text">Resilience</h4>
             </a>
