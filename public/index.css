@@ -1,3 +1,7 @@
 .text {
   font-family: 'Playfair Display', serif;
 }
+
+.spacer {
+  width: 10vw
+}
