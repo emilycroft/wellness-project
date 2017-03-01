@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const URL = 'http://localhost:3000/'
+const URL = 'https://wellness-project-1.herokuapp.com/'
 
 export const fetchHabits = () => {
   const habits = axios.get(URL + 'habits').then(response => response.data)
