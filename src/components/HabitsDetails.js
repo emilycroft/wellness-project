@@ -7,7 +7,8 @@ class HabitsDetails extends Component {
     if (this.props.currentHabit !== {}) {
       return (
         <div className="HabitsList">
-          <h1>{this.props.currentHabit.details}</h1>
+          <h3 className="text-center">{this.props.currentHabit.name}</h3>
+          <h4 className="text-center">{this.props.currentHabit.details}</h4>
         </div>
       )
     } else {

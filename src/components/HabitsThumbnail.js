@@ -8,19 +8,22 @@ class HabitsThumbnail extends Component {
     this.props.updateCurrentHabit(this.props.habits[x])
   }
 
+  handleMouseOver() {
+
+  }
+
   render() {
     return (
       <div className="HabitsThumbnail">
-
-        <div className="col-lg-3 col-md-4 col-xs-6 thumb">
+        <div className="col-lg-3 col-md-4 col-xs-6 thumb" >
             <a className="thumbnail" onClick={this.handleClick.bind(this, 0)}>
-                <img className="img-responsive" src="images/apple.jpg" alt="Healthy Eating"/>
+            <img className="img-responsive" src="images/apple.jpg" alt="Healthy Eating"/>
                 <h4 className="text-center">Healthy Eating</h4>
             </a>
         </div>
         <div className="col-lg-3 col-md-4 col-xs-6 thumb">
             <a className="thumbnail" onClick={this.handleClick.bind(this, 1)} >
-                <img onMouseOver="" className="img-responsive" src="images/running.jpg" alt="Exercise"/>
+                <img onMouseOver={this.handleMouseOver.bind(this)} className="img-responsive" src="images/running.jpg" alt="Exercise"/>
                 <h4 className="text-center">Exercise</h4>
             </a>
         </div>
@@ -59,6 +62,7 @@ class HabitsThumbnail extends Component {
   }
 }
 
+// style={{backgroundImage: `url(${this.props.currentPark.image_url})`, backgroundSize: '100% 100%'}}
 function mapStateToProps(state) {
   return {
     habits: state.habits,
