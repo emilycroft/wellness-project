@@ -14,8 +14,8 @@ class HabitsList extends Component {
 
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default HabitsList;
+export default HabitsList

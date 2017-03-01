@@ -4,21 +4,23 @@ import { connect } from 'react-redux'
 
 class HabitsDetails extends Component {
   render() {
-    if (this.props.currentDetails === "") {
+    if (this.props.currentHabit !== {}) {
       return (
         <div className="HabitsList">
-
+          <h1>{this.props.currentHabit.details}</h1>
         </div>
       )
-      } else {
-        return <div></div>
-      }
+    } else {
+      return (
+        <div></div>
+      )
+    }
   }
 }
 
 function mapStateToProps(state) {
   return {
-    currentDetails: state.currentDetails
+    currentHabit: state.currentHabit
   }
 }
 
