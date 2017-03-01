@@ -7,7 +7,7 @@ class HabitsList extends Component {
       <div className="HabitsList">
         <div className="row">
           <div className="col-lg-12 p-40">
-              <h1 className="page-header">Health & Wellness</h1>
+              <h1 className="page-header text">Health & Wellness</h1>
           </div>
 
           <HabitsThumbnail />
